@@ -7,10 +7,7 @@ function Home() {
   const pageStyle = {
     backgroundImage: `url(${homeimg})`,
     backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    display: 'flex', // Flexbox layout
-    flexDirection: 'column', // Stack items vertically
-   
+    backgroundPosition: 'center'
   };
 
   return (
@@ -23,7 +20,7 @@ function Home() {
         </div>
         {/* Link button centered */}
           <div  className='col-lg-6>
-        <Link to={'/history'}className="text-success  text-decoration-none fe-bold mb-5">
+        <Link to={'/history'} className="text-success  text-decoration-none fe-bold mb-5">
           <button style={{fontSize:'25px'}} className='bg-success p-3 rounded w-50'>View Employee Details</button>
         </Link>
           </div>
@@ -31,6 +28,7 @@ function Home() {
 
       <div>
         {/* Heading centered */}
+    <div className='row'>
         <h2 className='mt-5 text-primary text-center' style={{textDecoration:'underline'}}>A Message for Employees</h2>
         <p className='ms-5 me-5 d-flex justify-content-center' style={{fontSize:'20px ', fontWeight:'bold', }}>Staying motivated and engaged at work can be challenging, 
           especially with the everyday pressures and demands of a fast-paced work environment. A positive, motivated team is essential to
@@ -39,6 +37,8 @@ function Home() {
             focus on their strengths, and work toward personal and team success.curious, stay driven, and most importantly, stay true to who you
              are.
       </p>
+       </div>
+      </div>
       </div>
     </div>
   );
