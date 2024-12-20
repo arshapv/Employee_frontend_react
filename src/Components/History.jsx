@@ -6,7 +6,7 @@ import { deleteHistoryAPI, getEmployeeAPI } from '../services/allAPI';
 
 
 
-function History({formData}) {
+function History() {
 const[history,setAllhistory]=useState([])
 console.log(history);
 
@@ -16,10 +16,8 @@ useEffect(()=>{
   const getEmployeeDetails=async()=>{
     try{
       const result=await  getEmployeeAPI()
-      if(result.status>=200 && result.status<300){
        setAllhistory(result.data)
     }  
-   }
    catch(err){
     console.log(err);
    }
@@ -55,7 +53,7 @@ useEffect(()=>{
       </div>
       {
         history?.length>0 ?
-<table className='table'>
+                 <table className='table'>
                    <thead>
                      <tr>
                       <th>Id</th>
