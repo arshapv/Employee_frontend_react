@@ -8,30 +8,31 @@ function Home() {
     backgroundImage: `url(${homeimg})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '100vh', // Make the div take full screen height
     display: 'flex', // Flexbox layout
     flexDirection: 'column', // Stack items vertically
-    justifyContent: 'center', // Vertically center the items
-    alignItems: 'center', // Horizontally center the items
-    textAlign: 'center', // Center text inside the elements
+   
   };
 
   return (
     <div style={pageStyle}>
-      <div className="container mt-5">
+      <div className="container ">
+        <div className='container row my-5 ms-5 d-flex justify-content-between'>
+        <div className='col-lg-6 mt-5 '>
         {/* Add component centered */}
-        <Add className="d-flex align-items-center justify-content-center text-danger" />
-        
+        <Add className=" text-danger" />
+        </div>
         {/* Link button centered */}
+          <div  className='col-lg-6>
         <Link to={'/history'}className="text-success  text-decoration-none fe-bold mb-5">
-          <button style={{fontSize:'25px'}} className='bg-success p-3 rounded w-25'>View Employee Details</button>
+          <button style={{fontSize:'25px'}} className='bg-success p-3 rounded w-50'>View Employee Details</button>
         </Link>
+          </div>
       </div>
 
       <div>
         {/* Heading centered */}
-        <h2 className='mt-5 text-primary' style={{textDecoration:'underline'}}>A Message for Employees</h2>
-        <p className='ms-5 me-5' style={{fontSize:'20px ', fontWeight:'bold', }}>Staying motivated and engaged at work can be challenging, 
+        <h2 className='mt-5 text-primary text-center' style={{textDecoration:'underline'}}>A Message for Employees</h2>
+        <p className='ms-5 me-5 d-flex justify-content-center' style={{fontSize:'20px ', fontWeight:'bold', }}>Staying motivated and engaged at work can be challenging, 
           especially with the everyday pressures and demands of a fast-paced work environment. A positive, motivated team is essential to
            creating a thriving workplace, where employees not only meet their goals but feel genuinely invested in their work. One simple yet
             powerful way to cultivate this positivity and enthusiasm is by sharing motivational quotes that inspire employees to keep going, 
