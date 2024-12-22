@@ -30,7 +30,7 @@ function Home() {
         {/* Heading centered */}
         <div className='row'>
         <h2 className='mt-5 text-primary text-center' style={{textDecoration:'underline'}}>A Message for Employees</h2>
-        <p className='ms-5 me-5 d-flex justify-content-center' style={{fontSize:'20px ', fontWeight:'bold', }}>Staying motivated and engaged at work can be challenging, 
+        <p className='ms-2 me-5 d-flex justify-content-center' style={{fontSize:'20px ', fontWeight:'bold', }}>Staying motivated and engaged at work can be challenging, 
           especially with the everyday pressures and demands of a fast-paced work environment. A positive, motivated team is essential to
            creating a thriving workplace, where employees not only meet their goals but feel genuinely invested in their work. One simple yet
             powerful way to cultivate this positivity and enthusiasm is by sharing motivational quotes that inspire employees to keep going, 
