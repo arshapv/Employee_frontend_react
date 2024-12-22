@@ -28,7 +28,7 @@ useEffect(()=>{
       backgroundPosition: 'center',
       height: '100vh', // Make the div take full screen height
       display: 'flex', // Flexbox layout
-      flexDirection: 'column', // Stack items vertically
+      flexDirection: 'column' // Stack items vertically
      
     };
   const deleteHistory=async(id)=>{
