@@ -19,7 +19,7 @@ function Home() {
            <Add className=" text-danger" />
         </div>
         {/* Link button centered */}
-          <div  className='col-lg-6'>
+          <div  className='col-lg-6 mt-5'>
             <Link to={'/history'} className="text-success  text-decoration-none fe-bold mb-5">
               <button style={{fontSize:'25px'}} className='bg-success p-3 rounded w-50'>View Employee Details</button>
             </Link>
