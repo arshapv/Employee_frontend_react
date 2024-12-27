@@ -91,7 +91,7 @@ function Add() {
     <div>
       <button
         onClick={handleShow}
-        className="btn btn-danger rounded fw-bold fs-4 mb-4 w-25 p-3"
+        className="btn btn-danger rounded fw-bold fs-4 mb-4 w-50 p-3"
       >
         <h5 style={{ fontWeight: '25px' }}>Add Employee Details</h5>
       </button>

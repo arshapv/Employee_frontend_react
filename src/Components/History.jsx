@@ -6,7 +6,7 @@ import { deleteHistoryAPI, getEmployeeAPI } from '../services/allAPI';
 
 
 
-function History({formData}) {
+function History() {
 const[history,setAllhistory]=useState([])
 console.log(history);
 
@@ -16,10 +16,8 @@ useEffect(()=>{
   const getEmployeeDetails=async()=>{
     try{
       const result=await  getEmployeeAPI()
-      if(result.status>=200 && result.status<300){
        setAllhistory(result.data)
     }  
-   }
    catch(err){
     console.log(err);
    }
@@ -30,10 +28,8 @@ useEffect(()=>{
       backgroundPosition: 'center',
       height: '100vh', // Make the div take full screen height
       display: 'flex', // Flexbox layout
-      flexDirection: 'column', // Stack items vertically
-      // justifyContent: 'center', // Vertically center the items
-      alignItems: 'center', // Horizontally center the items
-      textAlign: 'center', // Center text inside the elements
+      flexDirection: 'column' // Stack items vertically
+     
     };
   const deleteHistory=async(id)=>{
     try{
@@ -49,13 +45,15 @@ useEffect(()=>{
 
   return (
     <div style={pageStyle}>
-      <div>
+      <div className='mt-5 container'>
+      <div className='d-flex justify-content-between'>
+      <h3 className='mb-4 mt-5'>VIEW EMPLOYEE DETAILS</h3>
       <button className='btn bg-dark mt-5 mb-5'><Link to={'/'} style={{marginTop:'-500px',textDecoration:'none',fontWeight:'25px'}} className='text-danger'>Back to <i class="fa-solid fa-house"></i></Link></button>
-       <h3 className='mb-4'>VIEW EMPLOYEE DETAILS</h3>
+      
       </div>
       {
         history?.length>0 ?
-<table className='table'>
+                 <table className='table'>
                    <thead>
                      <tr>
                       <th>Id</th>
@@ -91,6 +89,8 @@ useEffect(()=>{
       }
        
     </div>
+    </div>
+      
   )
 }
 
